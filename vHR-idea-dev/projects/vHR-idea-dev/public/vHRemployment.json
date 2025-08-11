@@ -1,0 +1,15 @@
+{
+  "issuer": "VerifyHR Inc.",
+  "credentialType": "EmploymentCredential",
+  "employeeName": "Jane Doe",
+  "employeeId": "EMP123456",
+  "role": "Software Engineer",
+  "startDate": "2023-01-15",
+  "endDate": "2025-01-14",
+  "issueDate": "2023-01-10",
+  "company": "Tech Solutions Ltd.",
+  "referenceId": "REF7890",
+  "credentialProof": "https://example.com/proofs/EMP123456.pdf",
+  "notes": "Credential verified by HR department.",
+  "version": "1.0"
+}
