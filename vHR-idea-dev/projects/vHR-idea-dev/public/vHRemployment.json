@@ -1,4 +1,5 @@
 {
+  "name": "VerifyHR Employment Credential",
   "issuer": "VerifyHR Inc.",
   "credentialType": "EmploymentCredential",
   "employeeName": "Jane Doe",
@@ -11,5 +12,6 @@
   "referenceId": "REF7890",
   "credentialProof": "https://example.com/proofs/EMP123456.pdf",
   "notes": "Credential verified by HR department.",
-  "version": "1.0"
+  "version": "1.0",
+  "image": "ipfs://bafkreidxyd3qhmwr4f2u5qzsp32vgr6htiwheiwzr5je4wxu2mhnwak6vu"
 }

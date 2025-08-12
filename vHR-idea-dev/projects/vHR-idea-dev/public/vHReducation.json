@@ -1,0 +1,18 @@
+{
+  "name": "vHR Education Credential",
+  "issuer": "VerifyHR Inc.",
+  "credentialType": "EducationCredential",
+  "studentName": "John Smith",
+  "studentId": "STU987654",
+  "degree": "Bachelor of Science",
+  "major": "Computer Science",
+  "institution": "Tech University",
+  "startDate": "2019-09-01",
+  "endDate": "2023-06-30",
+  "issueDate": "2023-07-15",
+  "referenceId": "EDU12345",
+  "credentialProof": "https://example.com/proofs/STU987654.pdf",
+  "notes": "Credential verified by Registrar's Office.",
+  "version": "1.0",
+  "image": "ipfs://bafkreibri6mh6xjqks54vlkdsuya6j7gb3nfexqkuu3upognux3cyir33y"
+}

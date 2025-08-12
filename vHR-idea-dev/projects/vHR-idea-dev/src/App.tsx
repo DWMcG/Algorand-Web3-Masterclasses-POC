@@ -53,20 +53,7 @@ export default function App() {
   return (
     <SnackbarProvider maxSnack={3}>
       <WalletProvider manager={walletManager}>
-        <nav className="p-4 bg-gray-100 mb-4">
-          <button
-            className="mr-4 px-4 py-2 bg-blue-600 text-white rounded"
-            onClick={() => setPage('home')}
-          >
-            Home
-          </button>
-          <button
-            className="px-4 py-2 bg-green-600 text-white rounded"
-            onClick={() => setPage('verify')}
-          >
-            Verify Credentials
-          </button>
-        </nav>
+        
 
         <div className="p-4">
           {page === 'home' && <Home />}

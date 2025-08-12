@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import algosdk from "algosdk";
 import { getIndexerConfigFromViteEnvironment } from "../utils/network/getAlgoClientConfigs";
 
-const Verify: React.FC = () => {
+interface VerifyProps {
+  onClose: () => void;  // Add onClose prop type
+}
+
+const Verify: React.FC<VerifyProps> = ({ onClose }) => {
   const [assetId, setAssetId] = useState("");
   const [result, setResult] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -13,7 +17,7 @@ const Verify: React.FC = () => {
 
     try {
       const cfg = getIndexerConfigFromViteEnvironment();
-      const indexerClient = new algosdk.Indexer(cfg.token || "", cfg.server, cfg.port);
+      const indexerClient = new algosdk.Indexer("", cfg.server, cfg.port);
 
       // Search for asset info
       const response = await indexerClient.lookupAssetByID(Number(assetId)).do();
@@ -52,6 +56,14 @@ const Verify: React.FC = () => {
       </button>
 
       {result && <div className="mt-4 p-3 bg-gray-100 rounded">{result}</div>}
+
+      {/* Add a close button to call onClose */}
+      <button
+        onClick={onClose}
+        className="mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+      >
+        Close
+      </button>
     </div>
   );
 };
